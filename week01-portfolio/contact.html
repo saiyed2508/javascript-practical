@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Parth Desai</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1 id="logo">PARTH DESAI</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label>Name <input name="name" required /></label>
+        <label>Email <input name="email" type="email" required /></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button>Send</button>
+        <p class="msg" id="formMsg"></p>
+      </form>
+      <p class="muted">This form is a demo and won’t send emails. It shows a confirmation message on submit.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>&copy; <span id="year"></span> PARTH DESAI</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
